@@ -6,4 +6,6 @@ export const components = {
   case_studies: () => import("~/slices/CaseStudies/index.vue"),
   hero: () => import("~/slices/Hero/index.vue"),
   integrations: () => import("~/slices/Integrations/index.vue"),
+  rich_text: () => import("~/slices/RichText/index.vue"),
+  showcase: () => import("~/slices/Showcase/index.vue"),
 }
