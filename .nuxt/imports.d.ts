@@ -31,4 +31,5 @@ export { setInterval } from '#app/compat/interval';
 export { usePrismic, getSliceComponentProps, defineSliceZoneComponents, getRichTextComponentProps, getTableComponentProps } from '@prismicio/vue';
 export { usePrismicPreview } from '../node_modules/@nuxtjs/prismic/dist/runtime/usePrismicPreview';
 export { autocompleteUtil as tw } from '../node_modules/@nuxtjs/tailwindcss/dist/runtime/utils';
+export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

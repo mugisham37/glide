@@ -12,14 +12,9 @@ type HydrationStrategies = {
 }
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
-      'HelloWorld': typeof import("../app/components/HelloWorld.vue")['default']
-    'TheWelcome': typeof import("../app/components/TheWelcome.vue")['default']
-    'WelcomeItem': typeof import("../app/components/WelcomeItem.vue")['default']
-    'IconsIconCommunity': typeof import("../app/components/icons/IconCommunity.vue")['default']
-    'IconsIconDocumentation': typeof import("../app/components/icons/IconDocumentation.vue")['default']
-    'IconsIconEcosystem': typeof import("../app/components/icons/IconEcosystem.vue")['default']
-    'IconsIconSupport': typeof import("../app/components/icons/IconSupport.vue")['default']
-    'IconsIconTooling': typeof import("../app/components/icons/IconTooling.vue")['default']
+      'AppFooter': typeof import("../app/components/AppFooter.vue")['default']
+    'AppHeader': typeof import("../app/components/AppHeader.vue")['default']
+    'BaseContainer': typeof import("../app/components/BaseContainer.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -52,14 +47,9 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyHelloWorld': LazyComponent<typeof import("../app/components/HelloWorld.vue")['default']>
-    'LazyTheWelcome': LazyComponent<typeof import("../app/components/TheWelcome.vue")['default']>
-    'LazyWelcomeItem': LazyComponent<typeof import("../app/components/WelcomeItem.vue")['default']>
-    'LazyIconsIconCommunity': LazyComponent<typeof import("../app/components/icons/IconCommunity.vue")['default']>
-    'LazyIconsIconDocumentation': LazyComponent<typeof import("../app/components/icons/IconDocumentation.vue")['default']>
-    'LazyIconsIconEcosystem': LazyComponent<typeof import("../app/components/icons/IconEcosystem.vue")['default']>
-    'LazyIconsIconSupport': LazyComponent<typeof import("../app/components/icons/IconSupport.vue")['default']>
-    'LazyIconsIconTooling': LazyComponent<typeof import("../app/components/icons/IconTooling.vue")['default']>
+      'LazyAppFooter': LazyComponent<typeof import("../app/components/AppFooter.vue")['default']>
+    'LazyAppHeader': LazyComponent<typeof import("../app/components/AppHeader.vue")['default']>
+    'LazyBaseContainer': LazyComponent<typeof import("../app/components/BaseContainer.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -98,14 +88,9 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
-export const HelloWorld: typeof import("../app/components/HelloWorld.vue")['default']
-export const TheWelcome: typeof import("../app/components/TheWelcome.vue")['default']
-export const WelcomeItem: typeof import("../app/components/WelcomeItem.vue")['default']
-export const IconsIconCommunity: typeof import("../app/components/icons/IconCommunity.vue")['default']
-export const IconsIconDocumentation: typeof import("../app/components/icons/IconDocumentation.vue")['default']
-export const IconsIconEcosystem: typeof import("../app/components/icons/IconEcosystem.vue")['default']
-export const IconsIconSupport: typeof import("../app/components/icons/IconSupport.vue")['default']
-export const IconsIconTooling: typeof import("../app/components/icons/IconTooling.vue")['default']
+export const AppFooter: typeof import("../app/components/AppFooter.vue")['default']
+export const AppHeader: typeof import("../app/components/AppHeader.vue")['default']
+export const BaseContainer: typeof import("../app/components/BaseContainer.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -138,14 +123,9 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-export const LazyHelloWorld: LazyComponent<typeof import("../app/components/HelloWorld.vue")['default']>
-export const LazyTheWelcome: LazyComponent<typeof import("../app/components/TheWelcome.vue")['default']>
-export const LazyWelcomeItem: LazyComponent<typeof import("../app/components/WelcomeItem.vue")['default']>
-export const LazyIconsIconCommunity: LazyComponent<typeof import("../app/components/icons/IconCommunity.vue")['default']>
-export const LazyIconsIconDocumentation: LazyComponent<typeof import("../app/components/icons/IconDocumentation.vue")['default']>
-export const LazyIconsIconEcosystem: LazyComponent<typeof import("../app/components/icons/IconEcosystem.vue")['default']>
-export const LazyIconsIconSupport: LazyComponent<typeof import("../app/components/icons/IconSupport.vue")['default']>
-export const LazyIconsIconTooling: LazyComponent<typeof import("../app/components/icons/IconTooling.vue")['default']>
+export const LazyAppFooter: LazyComponent<typeof import("../app/components/AppFooter.vue")['default']>
+export const LazyAppHeader: LazyComponent<typeof import("../app/components/AppHeader.vue")['default']>
+export const LazyBaseContainer: LazyComponent<typeof import("../app/components/BaseContainer.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

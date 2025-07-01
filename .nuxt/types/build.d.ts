@@ -18,6 +18,8 @@ declare module "#build/prismic/proxy/richTextSerializer.ts";
 declare module "#build/prismic/proxy/linkRel.ts";
 declare module "#build/prismic/proxy/richTextComponents.ts";
 declare module "#build/prismic/proxy/sliceZoneDefaultComponent.ts";
+declare module "#build/devtools/settings.mjs";
+declare module "#build/runtime.vue-devtools-client.Rp0UQL48Cwb0GHdEAT4Kc3_I4ShA2xnNWWdHyt9Q2Qc.js";
 declare module "#build/routes.mjs";
 declare module "#build/pages.mjs";
 declare module "#build/router.options.mjs";
